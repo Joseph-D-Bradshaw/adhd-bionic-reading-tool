@@ -22,7 +22,7 @@ const onInit = () => {
 };
 const convertText = () => {
     const textToConvert = inputField.value;
-    let matches = textToConvert.match(/\w+\n|\w+|\n/g);
+    let matches = textToConvert.match(/\w+,?\.?|\w+,?.?\n|\n/g);
     let words = matches.map((word) => {
         const bold = word.slice(0, numOfBoldChars);
         const regular = word.slice(numOfBoldChars);
