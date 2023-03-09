@@ -1,0 +1,7 @@
+{
+    "compilerOptions": {
+        "target": "ES2017",
+        "module": "CommonJS",
+        "sourceMap": false // set to true whilst developing
+    }
+}

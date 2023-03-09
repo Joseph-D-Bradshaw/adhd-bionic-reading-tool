@@ -1,0 +1,54 @@
+h1 {
+    margin-left: 3rem;
+}
+
+#tools-container {
+    display: flex;
+    gap: 2em;
+}
+
+textarea {
+    width: 50vw;
+}
+
+#output-container {
+    white-space: pre-wrap;
+    max-width: 80ch;
+}
+
+.small-padding {
+    padding: 2rem 3rem;
+}
+
+.horizontal-padding {
+    padding: 0 1rem;
+}
+
+.font-roboto {
+    font-family: 'Roboto';
+}
+
+.font-open-sans {
+    font-family: 'Open Sans';
+}
+
+.font-lexend {
+    font-family: 'Lexend';
+}
+
+.font-arial {
+    font-family: Arial;
+}
+
+.vertical-flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.horizontal-flex {
+    display: flex;
+}
+
+.gap-small {
+    gap: 1em;
+}

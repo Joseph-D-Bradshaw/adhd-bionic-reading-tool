@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ADHD Reading Tool</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="main.js" defer></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lexend&family=Open+Sans&family=Roboto&display=swap');
+    </style>
+</head>
+
+<body>
+    <h1>ADHD Reading Tool</h1>
+    <div id="tools-container" class="small-padding">
+        <div>
+            <textarea name="input-field" id="input-field" rows="10"
+                      oninput="convertText()" placeholder="Paste text here"></textarea>
+        </div>
+        <div class="vertical-flex gap-small">
+            <div class="horizontal-flex gap-small">
+                <label for="fonts">Choose output font:</label>
+                <select name="fonts" id="font-selector" onchange="selectFont(this)">
+                    <option value="arial">Arial</option>
+                    <option value="roboto">Roboto</option>
+                    <option value="open-sans">Open Sans</option>
+                    <option value="lexend">Lexend</option>
+                </select>
+            </div>
+            <div class="vertical-flex">
+                <label for="chars-selector">No of chars to embold: <span id="chars-label">3</span></label>
+                <div class="horizontal-flex">
+                    <input type="range" name="chars-selector" id="chars-selector" min="0" max="5" value="3"
+                        oninput="updateLabel()" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr />
+
+    <div id="output-container" class="small-padding"></div>
+</body>
+
+</html>
